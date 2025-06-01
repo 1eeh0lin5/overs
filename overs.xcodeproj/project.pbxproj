@@ -16,6 +16,9 @@
 		89567AC52DE60E0A0001BF54 /* UserInfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89567AC42DE60E0A0001BF54 /* UserInfoCard.swift */; };
 		89567AC62DE60E0A0001BF54 /* FeatureGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89567AC32DE60E0A0001BF54 /* FeatureGridView.swift */; };
 		89567AC82DE60E1E0001BF54 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89567AC72DE60E1E0001BF54 /* Theme.swift */; };
+		895E4C2C2DEC9A380027A682 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895E4C2B2DEC9A280027A682 /* AccountView.swift */; };
+		895E4C2E2DEC9A570027A682 /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895E4C2D2DEC9A550027A682 /* TranslateView.swift */; };
+		895E4C302DEC9A740027A682 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895E4C2F2DEC9A720027A682 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		89567AC32DE60E0A0001BF54 /* FeatureGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureGridView.swift; sourceTree = "<group>"; };
 		89567AC42DE60E0A0001BF54 /* UserInfoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCard.swift; sourceTree = "<group>"; };
 		89567AC72DE60E1E0001BF54 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		895E4C2B2DEC9A280027A682 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		895E4C2D2DEC9A550027A682 /* TranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
+		895E4C2F2DEC9A720027A682 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -137,6 +143,9 @@
 		89567AB62DE60CEF0001BF54 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				895E4C2F2DEC9A720027A682 /* SettingsView.swift */,
+				895E4C2D2DEC9A550027A682 /* TranslateView.swift */,
+				895E4C2B2DEC9A280027A682 /* AccountView.swift */,
 				89567AC32DE60E0A0001BF54 /* FeatureGridView.swift */,
 				89567AC42DE60E0A0001BF54 /* UserInfoCard.swift */,
 				89567AC12DE60DEC0001BF54 /* DashboardView.swift */,
@@ -310,11 +319,14 @@
 				89567ABE2DE60D5B0001BF54 /* ContentView.swift in Sources */,
 				89567AC22DE60DEC0001BF54 /* DashboardView.swift in Sources */,
 				89567ABC2DE60D460001BF54 /* UserViewModel.swift in Sources */,
+				895E4C2C2DEC9A380027A682 /* AccountView.swift in Sources */,
 				89567A8E2DE60C220001BF54 /* oversApp.swift in Sources */,
 				89567ABA2DE60D2E0001BF54 /* User.swift in Sources */,
 				89567AC82DE60E1E0001BF54 /* Theme.swift in Sources */,
 				89567AC52DE60E0A0001BF54 /* UserInfoCard.swift in Sources */,
+				895E4C302DEC9A740027A682 /* SettingsView.swift in Sources */,
 				89567AC62DE60E0A0001BF54 /* FeatureGridView.swift in Sources */,
+				895E4C2E2DEC9A570027A682 /* TranslateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

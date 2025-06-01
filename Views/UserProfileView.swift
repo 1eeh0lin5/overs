@@ -9,7 +9,7 @@ struct UserProfileView: View {
             VStack(spacing: 24) {
                 UserInfoCard(user: viewModel.user)
                 DashboardView()
-                FeatureGridView()
+//                FeatureGridView()
             }
             .padding(.top, 24)
         }

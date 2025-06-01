@@ -6,28 +6,23 @@ struct UserProfileView: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 16) {
-                // 用户信息卡片
+            VStack(spacing: 24) {
                 UserInfoCard(user: viewModel.user)
-                // 数据看板
                 DashboardView()
-                // 功能入口网格
                 FeatureGridView()
             }
             .padding(.top, 24)
         }
-        // 全局背景色
-        .background(Theme.neutralGray.ignoresSafeArea())
-        // 下拉刷新，触发数据刷新
+        .background(Color(.systemGroupedBackground).ignoresSafeArea())
         .refreshable {
             viewModel.refreshData()
         }
-        // 页面出现时自动获取用户数据
         .onAppear {
             viewModel.fetchUserData()
         }
     }
 }
+
 
 //struct UserProfileView_Previews: PreviewProvider {
 //    static var previews: some View {

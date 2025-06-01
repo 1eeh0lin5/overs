@@ -15,54 +15,54 @@ struct UserInfoCard: View {
     
     var body: some View {
         VStack(spacing: 12) {
-            // 头像
             Image(user.avatar)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: 120, height: 120)
+                .frame(width: 96, height: 96)
                 .clipShape(Circle())
-                .overlay(Circle().stroke(Theme.mainBlue, lineWidth: 4))
+                .shadow(radius: 6)
+                .overlay(
+                    Circle().stroke(Color.accentColor, lineWidth: 2)
+                )
+                .padding(.top, 8)
                 .onTapGesture {
-                    // 头像更换逻辑（待实现）
+                    // 头像更换逻辑
                 }
                 .onLongPressGesture {
-                    // 长按进入编辑状态
                     isEditing = true
                 }
             if isEditing {
-                // 编辑昵称
                 TextField("昵称", text: $nickname)
-                    .font(.custom(Theme.titleFont, size: 20))
+                    .font(.title2.bold())
                     .multilineTextAlignment(.center)
-                // 编辑签名
                 TextField("签名", text: $signature)
-                    .font(.custom(Theme.captionFont, size: 14))
+                    .font(.caption)
                     .multilineTextAlignment(.center)
-                // 完成按钮，保存编辑内容
                 Button("完成") {
                     isEditing = false
-                    // 保存逻辑（待实现）
+                    // 保存逻辑
                 }
+                .buttonStyle(.borderedProminent)
             } else {
-                // 显示昵称
                 Text(user.nickname)
-                    .font(.custom(Theme.titleFont, size: 20))
-                // 显示会员等级
+                    .font(.title2.bold())
                 Text(user.level)
-                    .font(.custom(Theme.bodyFont, size: 17))
-                    .foregroundColor(Theme.financeGreen)
-                // 显示签名
+                    .font(.subheadline)
+                    .foregroundColor(.accentColor)
                 Text(user.signature)
-                    .font(.custom(Theme.captionFont, size: 14))
-                    .foregroundColor(.gray)
+                    .font(.caption)
+                    .foregroundColor(.secondary)
             }
         }
         .padding()
-        .background(Color.white)
-        .cornerRadius(16)
-        .shadow(radius: 4)
+        .background(
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .fill(Color(.secondarySystemBackground))
+        )
+        .padding(.horizontal)
     }
-} 
+}
+
 
 struct UserInfoCard_Previews: PreviewProvider {
     static var previews: some View {
